@@ -16,8 +16,8 @@
     </author>
     <content src="index.html" />
 
-    <!-- Icon and splash screen configurations -->
-    <icon src="five-icon.png" />
+    <!-- Icon configurations -->
+    <icon src="five-app-icon.png" />
 
     <!-- ACCESS RULES -->
     <!-- <access origin="http://www.parkietenvilla.nl" /> -->
