@@ -6,7 +6,7 @@
         versionCode = '"1'>
 
     <!-- GENERAL AND IMPORTANT STUFF -->
-    <preference name="phonegap-version" value="3.3.0" />
+    <preference name="phonegap-version" value="2.9.0" />
     <name>Five</name>
     <description>
     Five just checks if it's 5 o'clock already. If not, it tells you where it is 5 o'clock, just to cheer you up!
