@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "in.jeroen.fivemobile"
+        version     = "1.0"
+        versionCode = '"1'>
+
+    <!-- GENERAL AND IMPORTANT STUFF -->
+    <preference name="phonegap-version" value="3.3.0" />
+    <name>Five</name>
+    <description>
+    Five just checks if it's 5 o'clock already. If not, it tells you where it is 5 o'clock, just to cheer you up!
+    </description>
+    <author href="http://jeroen.in" email="jeroenpeters1986@gmail.com">
+        Jeroen Peters
+    </author>
+    <content src="index.html" />
+
+    <!-- Icon and splash screen configurations -->
+    <icon src="five-icon.png" />
+
+    <!-- ACCESS RULES -->
+    <!-- <access origin="http://www.parkietenvilla.nl" /> -->
+    <!-- <access origin="*"/> -->
+
+    <!-- PREFERENCES -->
+	<preference name="InAppBrowserStorageEnabled" value="true" />
+	<preference name="DisallowOverscroll" value="true"/>
+    <!--<preference name="loglevel" value="DEBUG" />-->
+
+    <feature name="App">
+      <param name="android-package" value="org.apache.cordova.App"/>
+    </feature>
+    <!--
+    <feature name="Device">
+      <param name="android-package" value="org.apache.cordova.Device"/>
+    </feature>
+    <feature name="SplashScreen">
+      <param name="android-package" value="org.apache.cordova.SplashScreen"/>
+    </feature>
+    -->
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.InAppBrowser"/>
+    </feature>
+
+    <!--
+    <feature name="Geolocation">
+      <param name="android-package" value="org.apache.cordova.GeoBroker"/>
+    </feature>
+    <feature name="Accelerometer">
+      <param name="android-package" value="org.apache.cordova.AccelListener"/>
+    </feature>
+    <feature name="Compass">
+      <param name="android-package" value="org.apache.cordova.CompassListener"/>
+    </feature>
+    <feature name="Media">
+      <param name="android-package" value="org.apache.cordova.AudioHandler"/>
+    </feature>
+    <feature name="Camera">
+      <param name="android-package" value="org.apache.cordova.CameraLauncher"/>
+    </feature>
+    <feature name="Contacts">
+      <param name="android-package" value="org.apache.cordova.ContactManager"/>
+    </feature>
+    <feature name="File">
+      <param name="android-package" value="org.apache.cordova.FileUtils"/>
+    </feature>
+    <feature name="NetworkStatus">
+      <param name="android-package" value="org.apache.cordova.NetworkManager"/>
+    </feature>
+    <feature name="Notification">
+      <param name="android-package" value="org.apache.cordova.Notification"/>
+    </feature>
+    <feature name="Storage">
+      <param name="android-package" value="org.apache.cordova.Storage"/>
+    </feature>
+    <feature name="FileTransfer">
+      <param name="android-package" value="org.apache.cordova.FileTransfer"/>
+    </feature>
+    <feature name="Capture">
+      <param name="android-package" value="org.apache.cordova.Capture"/>
+    </feature>
+    <feature name="Battery">
+      <param name="android-package" value="org.apache.cordova.BatteryListener"/>
+    </feature>
+    <feature name="Echo">
+      <param name="android-package" value="org.apache.cordova.Echo"/>
+    </feature>
+    <feature name="Globalization">
+      <param name="android-package" value="org.apache.cordova.Globalization"/>
+    </feature>
+    -->
+</widget>

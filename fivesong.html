@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Is it five o'clock yet?</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="description" content="Is it five already?">
+    <meta name="author" content="Jeroen Peters">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target=".scroller-spy">
+
+<div class="main-wrapper">
+
+	<header class="headertop needhead" id="header-section">
+		<div class="innerbg">
+			<div class="leftbg"></div>
+
+            <div class="nav-top">
+                <div class="navbar navbar-fixed-top navbar-inverse" id="top-nav">
+                  <div class="navbar-inner">
+                    <div class="container">
+                      <span class="brand"><img src="assets/img/clock.png" style="height: 1.2em;" /> Listen to Five Anthem</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+<!-- HEADER MAIN-->	
+<div class="hero-unit">
+	<div class="container">
+		<div class="row-fluid">
+			<div class="text-center">
+				<hr class="half">
+				<h1 class="anthemtitle">"It's Five O' Clock Somewhere"</h1>
+                <h2 class="text-center anthemtitle">
+                    Alan Jackson & Brad Paisley
+                </h2>
+				<hr class="half">
+				<div class="camein">
+                    <iframe id="fivesong" width="100%" height="215" src="http://www.youtube.com/embed/cfL9Z6zpvvg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+					<p class="text-center">
+						<a href="index.html" class="btn btn-large btn-block-third btn-warning text-center" title="">TAKE ME BACK</a>
+					</p>
+				</div>
+				
+				
+			</div>	
+		</div>	
+	
+	</div>
+</div>
+
+
+</div><!--/ END PARALLAX BG-->
+</header>
+<!-- / ###################### END MAIN HEADER ####################
+	=============================================================== -->
+			
+
+</div>
+
+<script src="assets/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/timedata.js"></script>
+<script src="assets/js/fivepm.js"></script>
+<script type="text/javascript">
+    var nav = jQuery('.navbar-inner');
+    jQuery(window).scroll(function () {
+        if (jQuery(this).scrollTop() > 30) {
+            nav.addClass("scroll");
+        } else {
+            nav.removeClass("scroll");
+        }
+    });
+</script>
+
+</body>
+</html>
