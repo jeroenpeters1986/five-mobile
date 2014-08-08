@@ -43,10 +43,6 @@
         <icon src="res/ios/icon-50@2x.png" width="100" height="100" />
     </platform>
 
-    <gap:config-file platform="ios" parent="CFBundleIdentifier" overwrite="true">
-        <string>com.jeroenpeters.five.ios</string>
-    </gap:config-file>
-
     <!-- ACCESS RULES -->
     <!-- <access origin="http://www.parkietenvilla.nl" /> -->
     <!-- <access origin="*"/> -->
