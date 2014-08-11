@@ -118,7 +118,8 @@ $(document).ready(function()
 
     if(userTime[0] == 17)
     {
-        $('#fiveyesno').html("Yes! It's 5 o'clock!<br />Have a good night!");
+        $('#fiveyesno').html("Yes! It's 5 o'clock!");
+        $('#fiveadditional').html("Have a nice evening!");
     }
     else
     {

@@ -1,1 +1,11 @@
-images/.DS_Store
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.idea?
+.idea/
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
