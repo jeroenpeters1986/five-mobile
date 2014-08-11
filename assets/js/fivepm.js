@@ -33,11 +33,15 @@ var calcTargetTZ = function (userDate, userTZ)
  * Returns a random integer between min and max
  * Using Math.round() will give you a non-uniform distribution!
  */
-function getRandomInt (min, max)
+function getRandomInt(min, max)
 {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+
+/**
+ * For future shizzle
+ *
 function pickRandomProperty(obj)
 {
     var result;
@@ -48,30 +52,31 @@ function pickRandomProperty(obj)
     return result;
 }
 
-//function retrieve_country()
-//{
-//    xhr.open("GET", api_url, false);
-//    xhr.onreadystatechange = function()
-//    {
-//        if (xhr.readyState == 4)
-//        {
-//            response = String(xhr.responseText);
-//            ip_info = JSON.parse(response);
-//            user_country = ip_info.country;
-//        }
-//    }
-//
-//    var requestTimer = setTimeout(function()
-//    {
-//        xhr.abort();
-//    }, 1600);
-//
-//    try {
-//        xhr.send(null);
-//    } catch(err) {
-//        return false;
-//    }
-//}
+function retrieve_country()
+{
+    xhr.open("GET", api_url, false);
+    xhr.onreadystatechange = function()
+    {
+        if (xhr.readyState == 4)
+        {
+            response = String(xhr.responseText);
+            ip_info = JSON.parse(response);
+            user_country = ip_info.country;
+        }
+    }
+
+    var requestTimer = setTimeout(function()
+    {
+        xhr.abort();
+    }, 1600);
+
+    try {
+        xhr.send(null);
+    } catch(err) {
+        return false;
+    }
+}
+**/
 
 function summertimeyeah()
 {
@@ -124,25 +129,25 @@ $(document).ready(function()
     else
     {
         $('#fiveyesno').html("Not on your watch!");
-    }
 
-    if(summertimeyeah())
-    {
-        countries = dst_timezones[targetTZ];
-    }
-    else
-    {
-        countries = timezones[targetTZ];
-    }
+        if(summertimeyeah())
+        {
+            countries = dst_timezones[targetTZ];
+        }
+        else
+        {
+            countries = timezones[targetTZ];
+        }
 
-    if(countries)
-    {
-        $('#fiveadditional').html("But you'll be happy to know it's 5 o'clock in: "
-            + countries[getRandomInt(0,countries.length-1)]);
-    }
-    else
-    {
-        $('#fiveadditional').html("You can't celebrate 5 o'clock in another part of the world right now...");
+        if(countries)
+        {
+            $('#fiveadditional').html("But you'll be happy to know it's 5 o'clock in: <br />"
+                + countries[getRandomInt(0,countries.length-1)]);
+        }
+        else
+        {
+            $('#fiveadditional').html("Oh, snap! It's 5 o'clock nowhere!");
+        }
     }
 
 });
