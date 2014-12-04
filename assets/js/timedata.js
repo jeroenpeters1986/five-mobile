@@ -740,6 +740,7 @@ var dst_timezones = {
         "Togo",
         "Guernsey",
         "Isle of Man",
+        "United Kingdom",
         "Jersey",
         "Saint Helena",
         "Ascension",
@@ -825,7 +826,6 @@ var dst_timezones = {
         "Syria",
         "Turkey",
         "Ukraine",
-        "United Kingdom",
         "Akrotiri and Dhekelia",
         "Zambia",
         "Zimbabwe"
