@@ -125,6 +125,7 @@ $(document).ready(function()
     {
         $('#fiveyesno').html("Yes! It's 5 o'clock!");
         $('#fiveadditional').html("Have a nice evening!");
+        $('#front-page-nav, .nav-wrapper').addClass("light-green darken-2");
     }
     else
     {
@@ -141,7 +142,7 @@ $(document).ready(function()
 
         if(countries)
         {
-            $('#fiveadditional').html("But you'll be happy to know it's 5 o'clock in: <br />"
+            $('#fiveadditional').html("But it's actually 5 o'clock in <br />"
                 + countries[getRandomInt(0,countries.length-1)]);
         }
         else

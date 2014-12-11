@@ -1,79 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
     <meta charset="utf-8">
     <title>Is it five o'clock yet?</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Is it five already?">
-    <meta name="author" content="Jeroen Peters">
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" href="res/icon/ios/icon-76@2x.png"/>
+    <link rel="icon" href="assets/ico/favicon.ico">
+
+    <!--  Android 5 Chrome Color -->
+    <meta name="theme-color" content="#EE6E73"/>
+
+    <!-- CSS  -->
+    <link type="text/css" rel="stylesheet" href="material_assets/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="material_assets/css/five-material.css"  media="screen,projection"/>
 </head>
+<body>
 
-<body data-spy="scroll" data-target=".scroller-spy">
+<nav id="front-page-nav">
+    <div class="container">
+        <div class="nav-wrapper">
+            <a id="logo-container" href="index.html" class="hide-on-small-and-down brand-logo">
+                <img src="assets/img/clock.png" style="height: 1.2em; vertical-align: sub;" /> Is it five o'clock already?
+            </a>
 
-<div class="main-wrapper">
+            <a id="logo-container" href="index.html" class="hide-on-med-and-up brand-logo">
+                <img src="assets/img/clock.png" style="height: 1.2em; vertical-align: sub;" /> Is it five o'clock?
+            </a>
 
-	<header class="headertop needhead" id="header-section">
-		<div class="innerbg">
-			<div class="leftbg"></div>
+            <ul id="nav-mobile" class="right side-nav">
+                <li class="active"><a href="index.html">Time check</a></li>
+                <li><a href="fivesong.html">Five Anthem</a></li>
+            </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        </div>
+    </div>
+</nav>
 
-            <div class="nav-top">
-                <div class="navbar navbar-fixed-top navbar-inverse" id="top-nav">
-                  <div class="navbar-inner">
-                    <div class="container">
-                      <span class="brand"><img src="assets/img/clock.png" style="height: 1.2em; vertical-align: sub;" /> Is it five o'clock already?</span>
-                    </div>
-                  </div>
-                </div>
-            </div>
 
-            <div class="hero-unit">
-                <div class="container">
-                    <div class="row-fluid">
-                        <div class="text-center">
-                            <hr class="half">
-                                <h1 id="fiveyesno">Checking...</h1>
-                                <h2 class="text-center">
-                                    <span id="fiveadditional" class="get-it"></span>
-                                </h2>
-                            <hr class="half">
-                            <div class="camein">
-                                <p class="">
-                                    <a href="index.html" class="btn btn-large btn-danger btn-block-third " title="">Try again!</a>
-                                    <i class="or">- or -</i>
-                                    <a href="fivesong.html" class="btn btn-large btn-block-third btn-warning" title="">The Five Anthem</a>
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
+<div class="section" id="index-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m9">
+                <h3 class="text-center" id="fiveyesno">Checking...</h3>
+                <h4 class="text-center">
+                    <span id="fiveadditional" class="get-it"></span>
+                </h4>
+                <div class="section">
+                    <a href="index.html" class="waves-effect waves-light btn-large narrow">
+                        <i class="mdi-navigation-refresh"></i> Try again!
+                    </a>
+                    <a class="btn-flat narrow disabled">- or -</a>
+                    <a href="fivesong.html" class="waves-effect waves-light btn-large narrow">
+                        <i class="mdi-av-queue-music right"></i> The Five Anthem
+                    </a>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 </div>
 
 <script src="assets/js/jquery-1.11.1.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="assets/js/timedata.js"></script>
 <script src="assets/js/fivepm.js"></script>
-<script type="text/javascript">
-var nav = jQuery('.navbar-inner');
-jQuery(window).scroll(function () {
-    if (jQuery(this).scrollTop() > 30) {
-        nav.addClass("scroll");
-    } else {
-        nav.removeClass("scroll");
-    }
+<script src="material_assets/js/materialize.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".button-collapse").sideNav();
 });
-/* Windows Phone 7.x */
-if(navigator.userAgent.indexOf("Windows Phone OS 7") !== -1)
-{
-    document.getElementById('header-section').style.paddingTop = '0';
-}
 </script>
 
 </body>

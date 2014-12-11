@@ -1,82 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
     <meta charset="utf-8">
     <title>Is it five o'clock yet?</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-    <meta name="description" content="Is it five already?">
-    <meta name="author" content="Jeroen Peters">
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" href="res/icon/ios/icon-76@2x.png"/>
+    <link rel="icon" href="assets/ico/favicon.ico">
+
+    <!--  Android 5 Chrome Color -->
+    <meta name="theme-color" content="#EE6E73"/>
+
+    <!-- CSS  -->
+    <link type="text/css" rel="stylesheet" href="material_assets/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="material_assets/css/five-material.css"  media="screen,projection"/>
 </head>
+<body>
 
-<body data-spy="scroll" data-target=".scroller-spy">
+<nav id="front-page-nav" class="light-blue darken-2">
+    <div class="container">
+        <div class="nav-wrapper light-blue darken-2">
+            <a id="logo-container" class="brand-logo">
+                <i class="mdi-av-play-circle-outline"></i> Five Anthem
+            </a>
 
-<div class="main-wrapper">
+            <ul id="nav-mobile" class="right side-nav">
+                <li class="active"><a href="index.html">Time check</a></li>
+                <li><a href="fivesong.html">Five Anthem</a></li>
+            </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        </div>
+    </div>
+</nav>
 
-	<header class="headertop needhead" id="header-section">
-		<div class="innerbg">
-			<div class="leftbg"></div>
 
-            <div class="nav-top">
-                <div class="navbar navbar-fixed-top navbar-inverse" id="top-nav">
-                  <div class="navbar-inner">
-                    <div class="container">
-                      <span class="brand"><img src="assets/img/clock.png" style="height: 1.2em; vertical-align: sub;" /> Listen to Five Anthem</span>
-                    </div>
-                  </div>
+<div class="section" id="index-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m9">
+
+                <h4 class="text-center anthemtitle">"It's Five O' Clock Somewhere"</h4>
+                <h5 class="text-center anthemtitle">
+                    Alan Jackson & Brad Paisley
+                </h5>
+                <div class="section text-center">
+                    <iframe id="fivesong" width="100%" height="215" src="http://www.youtube.com/embed/cfL9Z6zpvvg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <p class="text-center">
+                        <a href="index.html" class="waves-effect waves-light btn-large narrow">
+                            <i class="mdi-navigation-chevron-left"></i> Back to Five
+                        </a>
+                    </p>
                 </div>
             </div>
-
-
-<!-- HEADER MAIN-->	
-<div class="hero-unit">
-	<div class="container">
-		<div class="row-fluid">
-			<div class="text-center">
-				<hr class="half">
-				<h1 class="anthemtitle">"It's Five O' Clock Somewhere"</h1>
-                <h2 class="text-center anthemtitle">
-                    Alan Jackson & Brad Paisley
-                </h2>
-				<hr class="half">
-				<div class="camein">
-                    <iframe id="fivesong" width="100%" height="215" src="http://www.youtube.com/embed/cfL9Z6zpvvg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-					<p class="text-center">
-						<a href="index.html" class="btn btn-large btn-block-third btn-warning text-center" title="">TAKE ME BACK</a>
-					</p>
-				</div>
-				
-				
-			</div>	
-		</div>	
-	
-	</div>
-</div>
-
-
-</div><!--/ END PARALLAX BG-->
-</header>
-<!-- / ###################### END MAIN HEADER ####################
-	=============================================================== -->
-			
-
+        </div>
+    </div>
 </div>
 
 <script src="assets/js/jquery-1.11.1.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="assets/js/timedata.js"></script>
-<script src="assets/js/fivepm.js"></script>
-<script type="text/javascript">
-    var nav = jQuery('.navbar-inner');
-    jQuery(window).scroll(function () {
-        if (jQuery(this).scrollTop() > 30) {
-            nav.addClass("scroll");
-        } else {
-            nav.removeClass("scroll");
-        }
+<script src="material_assets/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".button-collapse").sideNav();
+        $('#front-page-nav, .nav-wrapper').addClass("light-blue darken-2");
     });
 </script>
 

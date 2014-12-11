@@ -2,8 +2,8 @@
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.jeroenpeters.apps.five"
-        version     = "1.0.1"
-        versionCode = '1.1'>
+        version     = "1.0.2"
+        versionCode = '1.2'>
 
     <!-- GENERAL AND IMPORTANT STUFF -->
     <preference name="phonegap-version" value="3.5.0" />

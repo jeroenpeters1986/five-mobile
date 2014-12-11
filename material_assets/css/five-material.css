@@ -1,0 +1,13 @@
+.btn-large.narrow {
+    padding: 0 0.75rem !important;
+}
+.btn-flat.narrow {
+    padding: 0 0.25rem !important;
+}
+
+.btn-large>i {
+    margin-right: 8px;
+}
+.btn-large>i.right {
+    margin-left: 8px;
+}

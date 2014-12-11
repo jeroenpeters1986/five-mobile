@@ -300,7 +300,6 @@ var timezones = {
     "Sweden",
     "Switzerland",
     "Tunisia",
-    "United Kingdom",
     "Gibraltar",
     "Vatican City"
   ],
@@ -345,7 +344,6 @@ var timezones = {
     "Djibouti",
     "Eritrea",
     "Ethiopia",
-    "France",
     "French Southern and Antarctic Lands",
     "Scattered Islands in the Indian Ocean",
     "Bassas da India",
@@ -374,7 +372,6 @@ var timezones = {
   "4.00": [
     "Armenia",
     "Azerbaijan",
-    "France",
     "French Southern and Antarctic Lands",
     "Crozet Islands",
     "Scattered Islands in the Indian Ocean",
@@ -394,7 +391,6 @@ var timezones = {
   "5.00": [
     "Australia",
     "Heard Island and McDonald Islands",
-    "France",
     "French Southern and Antarctic Lands",
     "Île Amsterdam",
     "Île Saint-Paul",
@@ -510,7 +506,6 @@ var timezones = {
     "Federated States of Micronesia",
     "Kosrae State",
     "Pohnpei State",
-    "France",
     "New Caledonia",
     "Russia - Vladivostok Time",
     "Far Eastern Federal District",
@@ -525,7 +520,6 @@ var timezones = {
   "12.00": [
     "Antarctica",
     "Ross Dependency",
-    "France",
     "Wallis and Futuna",
     "Fiji",
     "Kiribati",
@@ -793,7 +787,6 @@ var dst_timezones = {
         "Sweden",
         "Switzerland",
         "Tunisia",
-        "United Kingdom",
         "Gibraltar",
         "Vatican City"
     ],
@@ -837,7 +830,6 @@ var dst_timezones = {
         "Djibouti",
         "Eritrea",
         "Ethiopia",
-        "France",
         "French Southern and Antarctic Lands",
         "Scattered Islands in the Indian Ocean",
         "Bassas da India",
@@ -866,7 +858,6 @@ var dst_timezones = {
     "4.00": [
         "Armenia",
         "Azerbaijan",
-        "France",
         "French Southern and Antarctic Lands",
         "Crozet Islands",
         "Scattered Islands in the Indian Ocean",
@@ -886,7 +877,6 @@ var dst_timezones = {
     "5.00": [
         "Australia",
         "Heard Island and McDonald Islands",
-        "France",
         "French Southern and Antarctic Lands",
         "Île Amsterdam",
         "Île Saint-Paul",
@@ -1002,7 +992,6 @@ var dst_timezones = {
         "Federated States of Micronesia",
         "Kosrae State",
         "Pohnpei State",
-        "France",
         "New Caledonia",
         "Russia - Vladivostok Time",
         "Far Eastern Federal District",
@@ -1017,7 +1006,6 @@ var dst_timezones = {
     "12.00": [
         "Antarctica",
         "Ross Dependency",
-        "France",
         "Wallis and Futuna",
         "Fiji",
         "Kiribati",
