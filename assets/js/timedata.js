@@ -332,7 +332,6 @@ var timezones = {
     "Syria",
     "Turkey",
     "Ukraine",
-    "United Kingdom",
     "Akrotiri and Dhekelia",
     "Zambia",
     "Zimbabwe"
